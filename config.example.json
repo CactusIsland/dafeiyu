@@ -1,0 +1,161 @@
+{
+  "enabled": true,
+  "dryRun": false,
+  "botQQ": "<BOT_QQ>",
+  "ownerQQ": "<OWNER_QQ>",
+  "ownerName": "主人",
+  "ownerLevel": "full",
+  "gateway": "snowluma",
+  "workspaceDir": "D:\\<项目路径>\\Aurabot\\qq-chats",
+  "allow": {
+    "private": [],
+    "groups": []
+  },
+  "model": {
+    "provider": "deepseek-official",
+    "model": "deepseek-flash",
+    "reasoningEffort": "high"
+  },
+  "persona": {
+    "current": "dafeiyu"
+  },
+  "memory": {
+    "enabled": true,
+    "recallCount": 6,
+    "dailyConsolidate": true,
+    "consolidateTimes": ["04:00", "16:00"]
+  },
+  "snowluma": {
+    "dir": "D:\\<项目路径>\\Aurabot\\snowluma",
+    "autoStart": true,
+    "httpUrl": "",
+    "wsUrl": "",
+    "httpToken": "",
+    "wsToken": ""
+  },
+  "imageGen": {
+    "enabled": false,
+    "provider": "openai",
+    "baseUrl": "",
+    "apiKey": "",
+    "model": ""
+  },
+  "voice": {
+    "enabled": false
+  },
+  "bili": {
+    "enabled": false
+  },
+  "douyin": {
+    "enabled": false,
+    "autoBrowse": false
+  },
+  "ext": {
+    "memory-compact": {
+      "enabled": true,
+      "intervalHours": 4,
+      "minAgeHours": 6,
+      "ratio": 0.75,
+      "countCap": 100,
+      "countTarget": 50,
+      "forgetEnabled": true,
+      "halfLifeDays": 21,
+      "blurBelow": 0.25,
+      "forgetBelow": 0.06,
+      "protectSources": "panel,import"
+    },
+    "memory-archive": {
+      "enabled": true,
+      "archiveSystemChats": false,
+      "searchMonths": 12,
+      "maxSearchResults": 8
+    },
+    "continuity": {
+      "enabled": true,
+      "intervalMinutes": 15,
+      "minNewLines": 6,
+      "minGapMinutes": 45,
+      "maxChars": 200,
+      "injectMaxAgeDays": 7,
+      "maxChatsPerRun": 2
+    },
+    "memory-map": {
+      "enabled": true,
+      "ownerNeverForget": true,
+      "protectPanelImport": true,
+      "raiseNeverImportance": true,
+      "includeDiary": true,
+      "maxPeople": 24,
+      "maxItemsPerSection": 12
+    },
+    "memory-cold": {
+      "enabled": true,
+      "scanMinutes": 10,
+      "coldBelow": 0.18,
+      "coldAfterDays": 30,
+      "sources": "auto,tool",
+      "maxMovesPerRun": 5,
+      "maxSearchResults": 5,
+      "warnRows": 5000,
+      "warnBytesMB": 20
+    },
+    "cue-recall": {
+      "enabled": true,
+      "maxItems": 3,
+      "maxChars": 480,
+      "months": 12
+    },
+    "session-budget": {
+      "enabled": true,
+      "warnTokens": 8000,
+      "rotateTokens": 14000,
+      "autoRotate": false,
+      "dryRun": false,
+      "idleMinutes": 15,
+      "maxRotationsPerDay": 3,
+      "checkMinutes": 15
+    },
+    "life-state": {
+      "enabled": true,
+      "energyStart": 80,
+      "hungerStart": 40,
+      "sleepStart": "23:30",
+      "sleepEnd": "09:00",
+      "energyDecayPerHour": 2.5,
+      "energySleepGainPerHour": 10,
+      "hungerGainPerHour": 3.5,
+      "hungerSleepGainPerHour": 1.2,
+      "feedHunger": 25,
+      "feedEnergy": 8,
+      "feedGif": true
+    },
+    "video-watch": {
+      "enabled": true,
+      "mode": "auto",
+      "maxAudioMinutes": 8,
+      "maxTranscriptChars": 3000,
+      "maxSummaryChars": 350,
+      "maxComments": 3,
+      "maxPerHour": 3,
+      "asrModel": "small",
+      "asrLang": "zh",
+      "cacheDays": 7,
+      "pythonPath": "python",
+      "ffmpegPath": "ffmpeg"
+    },
+    "pet-shot": {
+      "enabled": true,
+      "defaultAnim": "待机呼吸休闲",
+      "atSec": 0.6,
+      "width": 512,
+      "maxPerHour": 6,
+      "gifWidth": 320,
+      "gifFps": 12,
+      "gifSeconds": 5,
+      "gifBg": "F2F8FF",
+      "gifKeyBlack": true,
+      "maxGifPerHour": 3,
+      "ffmpegPath": "ffmpeg"
+    }
+  }
+}

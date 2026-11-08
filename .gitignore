@@ -1,0 +1,38 @@
+# 运行数据与密钥
+config.json
+memories.json
+chatlog/
+modules-data/
+logs/
+*.log
+*.jsonl
+*.jsonl.zstd
+*.zstd
+
+# Aurabot 模块缓存
+.aurabot-cache/
+node_modules/
+
+# 本地钩子与临时产物
+local/tts.mjs
+local/image.mjs
+local/out/
+*.wav
+*.mp3
+*.m4s
+*.mp4
+*.webm
+*.gif
+*.png
+*.jpg
+*.onnx
+*.pth
+*.ckpt
+*.index
+*.bak
+
+# 密钥
+.env
+*.key
+*.pem
+*.p12
